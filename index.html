@@ -7,9 +7,72 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <section style="padding: 40px 20px; max-width: 800px; margin: auto; font-family: sans-serif;">
-  <h2 style="color: #004a99; border-bottom: 2px solid #eee; padding-bottom: 10px;">Our Services</h2>
-  <ul style="line-height: 1.8; font-size: 1.1rem;">
+    <section /* General Page Settings */
+body {
+    background-color: #23252b; /* Dark charcoal from the card */
+    color: #f1f1e6;            /* Off-white text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1c21; /* Slightly darker header */
+}
+
+/* Matching the Card Logo Text */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.remodeling-text {
+    color: #a3a082; /* The grey-gold accent */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: -5px;
+}
+
+/* The "Free Estimate" Button */
+.cta-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #f1f1e6;
+    border: 2px solid #f1f1e6;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f1f1e6;
+    color: #23252b;
+}
+
+/* Services List */
+.services-list {
+    max-width: 600px;
+    margin: 40px auto;
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li::before {
+    content: "•";
+    color: #f1f1e6;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
     <li><strong>Interior Painting:</strong> Walls, ceilings, and trim.</li>
     <li><strong>Exterior Painting:</strong> Siding, stucco, and wood.</li>
     <li><strong>Cabinet Refinishing:</strong> Give your kitchen a new look.</li>
